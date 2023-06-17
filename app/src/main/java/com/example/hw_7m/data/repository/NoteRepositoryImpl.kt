@@ -6,8 +6,9 @@ import com.example.hw_7m.data.mappers.toNote
 import com.example.hw_7m.data.model.NoteEntity
 import com.example.hw_7m.domain.model.Note
 import com.example.hw_7m.domain.repository.NoteRepository
+import javax.inject.Inject
 
-class NoteRepositoryImpl(
+class NoteRepositoryImpl @Inject constructor(
     private val noteDao: NoteDao
 ) : NoteRepository {
     override fun getAllNotes(): List<Note> {
