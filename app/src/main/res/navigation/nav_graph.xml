@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listNoteFragment2">
+    <fragment
+        android:id="@+id/createEditNoteFragment2"
+        android:name="CreateEditNoteFragment"
+        android:label="CreateEditNoteFragment" />
+    <fragment
+        android:id="@+id/listNoteFragment2"
+        android:name="ListNoteFragment"
+        android:label="ListNoteFragment" >
+        <action
+            android:id="@+id/action_listNoteFragment2_to_createEditNoteFragment2"
+            app:destination="@id/createEditNoteFragment2" />
+    </fragment>
+</navigation>
