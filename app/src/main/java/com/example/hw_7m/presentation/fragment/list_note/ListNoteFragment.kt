@@ -1,4 +1,4 @@
-package com.example.hw_7m.presentation
+package com.example.hw_7m.presentation.fragment.list_note
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

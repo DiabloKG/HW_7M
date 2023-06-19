@@ -7,5 +7,5 @@ import javax.inject.Inject
 class UpdateNoteUseCase @Inject constructor(
     private val noteRepository: NoteRepository
 ) {
-    fun createNote(note: Note) = noteRepository.updateNote(note)
+    fun updateNote(note: Note) = noteRepository.updateNote(note)
 }
